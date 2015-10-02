@@ -12,8 +12,9 @@ angular.module('raw.controllers', [])
       { title : 'Cars (multivariate)', url : 'data/multivariate.csv' },
       { title : 'Movies (dispersions)', url : 'data/dispersions.csv' },
       { title : 'Music (flows)', url : 'data/flows.csv' },
-      { title : 'Cocktails (correlations)', url : 'data/correlations.csv' }
-    ]
+      { title : 'Cocktails (correlations)', url : 'data/correlations.csv' },
+      { title : 'ZFlower (2D)', url : 'data/flower.csv' }
+    ];
 
     $scope.$watch('sample', function (sample){
       if (!sample) return;

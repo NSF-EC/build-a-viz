@@ -46,6 +46,17 @@ require.config({
     'filesaver':        '/bower_components/FileSaver/FileSaver',
     'zeroclip':         '/bower_components/zeroclipboard/ZeroClipboard.min',
 
+    // added for zFlowers
+    'underscore':   '/bower_components/underscore/underscore',
+    'd3-tip':       '/bower_components/d3-tip/index',      // tooltips
+
+    'HexCell' :       '/zflib/js/lib/geometry/HexCell',
+    'HexCellBuilder': '/zflib/js/lib/geometry/HexCellBuilder',
+    'ColorScale':     '/zflib/js/lib/utils/ColorScale',
+    'MEHTool'   :     '/zflib/js/lib/utils/d3Tool',
+    'ZFlowerData':    '/zflib/js/lib/vis/ZFlowerData',
+    'SimpleZFlower':  '/zflib/js/lib/vis/SimpleZFlower'
+
   },
   shim: {
     'raw': {
@@ -88,7 +99,13 @@ require.config({
     'services':     {deps: ['angular', 'raw']},
     'controllers':  {deps: ['angular', 'raw']},
     'filters':      {deps: ['angular', 'raw']},
-    'directives':   {deps: ['angular', 'raw']}
+    'directives':   {deps: ['angular', 'raw']},
+
+    // added for zFlowers
+    'd3-tip' : {deps:['d3']},
+    'underscore': {
+      exports: "_"
+    }
 
   } // end of shim
 
@@ -143,7 +160,11 @@ require([
   '/charts/smallMultiplesArea.js',  // none of the sample datasets works for testing this, build your own
   '/charts/streamgraph.js',
   '/charts/treemap.js',
-  '/charts/voronoi.js'
+  '/charts/voronoi.js',
+
+  // added for zflower
+  '/charts/zflower.js'
+
 
 
 
