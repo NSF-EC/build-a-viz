@@ -36,6 +36,11 @@
     "canvas-toBlob": "https://github.com/eligrey/canvas-toBlob.js.git",
     "jqueryui-touch-punch": "*",
     "codemirror": "~4.5.0",
-    "requirejs": "~2.1.20"
+    "requirejs": "~2.1.20",
+    "underscore": "*",
+    "d3-tip": "*"
+  },
+  "resolutions": {
+    "d3": "3.5.5"
   }
 }

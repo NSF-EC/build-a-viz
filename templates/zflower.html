@@ -1,0 +1,56 @@
+<style>
+    .zflower-tooltip {
+      line-height: 1;
+      font-weight: bold;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 5px;
+    }
+     /* Creates a small triangle extender for the tooltip */
+    .zflower-tooltip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+    }
+     /* Style northward tooltips differently */
+    .zflower-tooltip.n:after {
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+    }
+
+    .arc-tooltip {
+      position: absolute;
+      text-align: center;
+      /*width: 60px;*/
+      max-content: 110px;
+      padding: 10;
+      height: auto;
+      padding: 4px;
+      margin: 0;
+      font: 10px sans-serif;
+      background: lightsteelblue;
+      border-width: thin;
+      border-style:solid;
+      border-color: rgba(0,0,200,0.7);
+      border-radius: 8px;
+      pointer-events: none;
+    }
+</style>
+
+<div style="opacity:0" class="arc-tooltip">
+    <strong><%= text %></strong>
+</div>
+
+<div style="visibility:hidden" class="zflower-tooltip">
+    <strong>value:&nbsp;</strong>
+    <span style="color:red"><%= value %></span>
+    <br/>id: <%= id %>
+</div>
