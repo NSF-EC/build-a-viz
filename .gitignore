@@ -3,4 +3,7 @@ node_modules/
 bower_components/
 components/
 *.idea
+# zlib can be either a submodule or a soft link to the zflower project
+# see https://github.com/NSF-EC/zflowers.git
+# e.g. zflib@ -> ../zflowers/languages
 zflib
