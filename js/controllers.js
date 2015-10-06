@@ -9,10 +9,12 @@ angular.module('raw.controllers', [])
   .controller('RawCtrl', function ($scope, dataService) {
 
     $scope.samples = [
+      /*
       { title : 'Cars (multivariate)', url : 'data/multivariate.csv' },
       { title : 'Movies (dispersions)', url : 'data/dispersions.csv' },
       { title : 'Music (flows)', url : 'data/flows.csv' },
       { title : 'Cocktails (correlations)', url : 'data/correlations.csv' },
+      */
       { title : 'ZFlower (2D)', url : 'data/flower.csv' }
     ];
 
@@ -35,7 +37,8 @@ angular.module('raw.controllers', [])
     $scope.error = false;
     $scope.loading = true;
 
-    $scope.categories = ['Correlations', 'Distributions', 'Time Series', 'Hierarchies', 'Others'];
+    //$scope.categories = ['Correlations', 'Distributions', 'Time Series', 'Hierarchies', 'Others'];
+    $scope.categories = ['Distributions'];
 
     $scope.parse = function(text){
 

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Zflower Builder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="zflower, visualization,data">
+    <meta name="Description" content="build a zflower visualations">
+
+    <script>
+        //document.write('<base href="' + document.location + '/public/WMS/../.." />');
+        // console.log("BASE", document.location);
+        //document.write('<base href="../.." />');
+    </script>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic|Lato:400,700,900|Open+Sans:400,300,600,700,800|Roboto+Slab:400,300,100,700|Roboto:400,100,300,500,700,900&subset=latin,latin-ext"/>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-bootstrap-colorpicker/css/colorpicker.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bower_components/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="css/raw.css"/>
+    <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="bower_components/requirejs/require.js" data-main='js/boot.js'></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#raw-nav">
+
+<nav class="navbar" role="navigation" id="raw-nav">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#raw-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/#">Zflower Builder</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right" id="raw-navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="http://example.org">About</a></li>
+                <li><a href="https://github.com/NSF-EC/zflower-builder">Github</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+<div ng-view class="wrap"></div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p><strong>ZFlower Builder</strong> is a project funded by <a href="http://www.example.org">NSF, Stakeholder Alignment Group</a></p>
+                <p><a href="https://github.com/NSF-EC">NSF,</a> Joel Cutcher-Gershenfeld, Michael Haberman</p>
+                <p>&copy; 2015-2016 (<a href="https://github.com/NSF-EC/zflower-builder/blob/master/LICENSE">LGPL License</a>)</p>
+                <p>This project was forked from <a href="https://github.com/mikeh2/raw-to-vis">raw-to-vis</a> a project (which is a fork of the raw framework)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- google analytics -->
+<script src="./js/analytics.js"></script>
+
+
+</body>
+</html>

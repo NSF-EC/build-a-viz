@@ -143,6 +143,7 @@ require([
   'filters',
   'directives',
 
+  /*
   // raw + d3 charts
   '/charts/alluvial.js',
   '/charts/bumpChart.js',
@@ -161,6 +162,7 @@ require([
   '/charts/streamgraph.js',
   '/charts/treemap.js',
   '/charts/voronoi.js',
+  */
 
   // added for zflower
   '/charts/zflower.js'
